@@ -18,22 +18,27 @@ const PersonList = () => {
           <li className={styles.person} key={person.id}>
             <img src={person.image} alt={person.name} />
             <div className={styles.person__title}>
-              <h2>{person.name}</h2>
-              <span>
-                <div
-                  style={{
-                    width: '10px',
-                    height: '10px',
-                    borderRadius: '100%',
-                    backgroundColor:
-                      person.status === 'Dead'
-                        ? 'red'
-                        : person.status === 'Alive'
-                        ? 'green'
-                        : 'gray',
-                  }}
-                ></div>
-                {person.status} - {person.species}
+              <div className={styles.title}>
+                <h2>{person.name}</h2>
+                <span>
+                  <div
+                    style={{
+                      width: '10px',
+                      height: '10px',
+                      borderRadius: '100%',
+                      backgroundColor:
+                        person.status === 'Dead'
+                          ? 'red'
+                          : person.status === 'Alive'
+                          ? 'green'
+                          : 'gray',
+                    }}
+                  ></div>
+                  {person.status} - {person.species}
+                </span>
+              </div>
+              <span className={styles.title__second}>
+                Last known location: <br /> {person.location.name}
               </span>
             </div>
           </li>
