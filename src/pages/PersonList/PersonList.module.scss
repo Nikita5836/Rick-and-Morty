@@ -111,3 +111,24 @@
         }
     }
 }
+
+@media screen and (max-width: 680px) {
+    .item {
+        h1 {
+            font-size: 40px;
+        }
+
+        .persons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .paginate {
+            button {
+                padding: 5px 10px 5px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}
