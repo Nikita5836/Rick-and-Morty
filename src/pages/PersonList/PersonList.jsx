@@ -12,6 +12,7 @@ const PersonList = () => {
 
   return (
     <div className={styles.item}>
+      <h1>Персонажи</h1>
       <ul className={styles.persons}>
         {persons.map((person) => (
           <li className={styles.person} key={person.id}>
