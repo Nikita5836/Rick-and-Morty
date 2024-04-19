@@ -1,0 +1,28 @@
+.home {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 100px 0 100px;
+
+  .title {
+    width: 1080px;
+    height: auto;
+    padding: 50px 0 50px 0;
+  }
+
+  .popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    h1 {
+      font-size: 64px;
+      color: white;
+    }
+  }
+}

@@ -5,14 +5,14 @@ import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Routes>
         {routesConfig.map((r, index) => (
           <Route key={index} path={r.path} element={r.element} />
         ))}
       </Routes>
-    </div>
+    </>
   );
 };
 

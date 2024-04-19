@@ -1,27 +1,49 @@
-import styles from './Header.module.scss';
-import Logo from '../../imgs/Logo.png';
-import { NavLink } from 'react-router-dom';
-import { IoSearchSharp } from 'react-icons/io5';
-import { RxHamburgerMenu } from "react-icons/rx";
+import styles from './Header.module.scss'
+import Logo from '../../imgs/Logo.png'
+import { Link, NavLink } from 'react-router-dom'
+import { Button, Group } from '@mantine/core'
+import acc from '../../imgs/account.svg'
 
 const Header = () => {
-  return (
-    <div className={styles.header}>
-      <div className={styles.header__item}>
-        <img className={styles.header__logo} src={Logo} alt="" />
-        <div className={styles.header__link}>
-          <NavLink to="/">Персонажи</NavLink>
-          <NavLink to="/location">Планеты</NavLink>
-          <NavLink to="/episode">Эпизоды</NavLink>
-        </div>
-        <div className={styles.header__input}>
-          <input placeholder="Поиск" type="text" />
-          <IoSearchSharp style={{ cursor: 'pointer' }} color="white" />
-        </div>
-      <RxHamburgerMenu className={styles.burger} />
-      </div>
-    </div>
-  );
-};
+	return (
+		<>
+			<div className={styles.header}>
+				<div className={styles.header__item}>
+					<img className={styles.header__logo} src={Logo} alt='Logo' />
+					<nav>
+						<Group className={styles.header__nav}>
+							<ul>
+								<li>
+									<NavLink to='/'>Home</NavLink>
+								</li>
+								<li>
+									<NavLink to='characters'>Characters</NavLink>
+								</li>
+								<li>
+									<NavLink to='location'>Location</NavLink>
+								</li>
+								<li>
+									<NavLink to='episode'>Episodes</NavLink>
+								</li>
+							</ul>
+						</Group>
+					</nav>
+					<Link to='/account'>
+						<Button variant='transparent'>
+							<img src={acc} alt='account' width={32} />
+						</Button>
+					</Link>
+				</div>
+			</div>
+		</>
+	)
+}
 
-export default Header;
+export default Header
+
+{
+	/* <NavLink to='/'>Home</NavLink>
+<NavLink to='characters'>Characters</NavLink>
+<NavLink to='location'>Location</NavLink>
+<NavLink to='episode'>Episodes</NavLink> */
+}
