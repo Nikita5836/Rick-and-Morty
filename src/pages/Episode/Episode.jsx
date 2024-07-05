@@ -1,7 +1,7 @@
 import styles from './Episode.module.scss';
 
 const Episode = () => {
-  return <div>Episode</div>;
+  return <>Episode</>;
 };
 
 export default Episode;

@@ -1,0 +1,27 @@
+.notFount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .par {
+    margin-top: -7%;
+    margin-bottom: 1%;
+    text-align: center;
+    width: 460px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 57px;
+    border-radius: 62px;
+    background-color: #01870E;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}

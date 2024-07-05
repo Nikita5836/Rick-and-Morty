@@ -6,10 +6,11 @@
   align-items: center;
   margin: auto;
   padding: 0 100px 0 100px;
+  gap: 50px;
 
   .title {
-    width: 1080px;
-    height: auto;
+    max-width: 1080px;
+    max-height: auto;
     padding: 50px 0 50px 0;
   }
 
@@ -19,10 +20,63 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    gap: 37px;
 
     h1 {
-      font-size: 64px;
       color: white;
+      font-size: 64px;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+
+      .list__cart {
+        display: flex;
+        max-width: 500px;
+        max-height: 170px;
+        border: 1px solid white;
+        border-radius: 10px;
+        gap: 10px;
+
+        h2 {
+          color: white;
+        }
+
+        img {
+          width: 170px;
+          height: 165px;
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .episode {
+    display: flex;
+    justify-content: space-between;
+
+    .rick {
+      max-width: 385px;
+      max-height: auto;
+    }
+
+    .episode__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .episode__title__img1 {
+        display: flex;
+        gap: 20px;
+      }
+
+      img {
+        width: 424px;
+        height: auto;
+      }
     }
   }
 }

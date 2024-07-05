@@ -40,10 +40,3 @@ const Header = () => {
 }
 
 export default Header
-
-{
-	/* <NavLink to='/'>Home</NavLink>
-<NavLink to='characters'>Characters</NavLink>
-<NavLink to='location'>Location</NavLink>
-<NavLink to='episode'>Episodes</NavLink> */
-}

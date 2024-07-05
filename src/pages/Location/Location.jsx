@@ -1,7 +1,7 @@
 import styles from './Location.module.scss';
 
 const Location = () => {
-  return <div>Location</div>;
+  return <>Location</>;
 };
 
 export default Location;

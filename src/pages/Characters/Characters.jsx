@@ -2,7 +2,7 @@ import styles from './Characters.module.scss';
 
 const Characters = () => {
   return (
-    <div>Characters</div>
+    <>Characters</>
   )
 }
 
